@@ -4,12 +4,12 @@
 
 -- Set highlight on search
 vim.o.hlsearch = false
-
+vim.o.shiftwidth = 4;
 -- Make line numbers default
 vim.wo.number = true
-
+vim.wo.relativenumber = true;
 -- Enable mouse mode
-vim.o.mouse = 'a'
+vim.o.mouse = ''
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
