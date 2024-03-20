@@ -1,7 +1,8 @@
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
-
+vim.g.loaded_netrw = 0
+vim.g.loaded_netrwPlugin = 0
 -- Set highlight on search
 vim.o.hlsearch = false
 vim.o.shiftwidth = 4;

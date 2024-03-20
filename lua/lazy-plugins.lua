@@ -23,41 +23,37 @@ require('lazy').setup({
   p("nvim-lspconfig"),
   -- Autocompletion
   p("nvim-cmp"),
-   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
-    -- Adds git related signs to the gutter, as well as utilities for managing changes
+  -- Useful plugin to show you pending keybinds.
+  { 'folke/which-key.nvim',  opts = {} },
+  -- Adds git related signs to the gutter, as well as utilities for managing changes
   p("gitsigns"),
   --theme
-   p("onedark"),
-
-
+  p("onedark"),
+  --diagnostics window
+  p("trouble"),
   --custom statusline
   p("lualine"),
-
-
-    -- Add indentation guides even on blank lines
- p("blankline"),
+  --terminal window in nvim
+  p("toggle-term"),
+  -- Add indentation guides even on blank lines
+  p("blankline"),
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
-
   -- Fuzzy Finder (files, lsp, etc)
-  -- BREAKS !!! 
+  -- BREAKS !!!
   p("telescope"),
-    -- Highlight, edit, and navigate code
- p("nvim-treesitter"),
-  -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
-  --       These are some example plugins that I've included in the kickstart repository.
-  --       Uncomment any of the lines below to enable them.
-  -- require 'kickstart.plugins.autoformat',
-  -- require 'kickstart.plugins.debug',
+  -- Highlight, edit, and navigate code
+  p("nvim-treesitter"),
+  --Debugger
+  p("nvim-dap"),
+  --FS viewer, basically a buffer manager
+  p("nvim-tree"),
 
-  -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
-  --    You can use this folder to prevent any conflicts with this init.lua if you're interested in keeping
-  --    up-to-date with whatever is in the kickstart repo.
-  --    Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  --
-  --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
-  -- { import = 'custom.plugins' },
+  --RUST PLUGINS
+  p("rust.crates"),
+  p("rust.lsp-tools"),
+  --HASKELL PLUGINS
+  p("haskell.lsp-tools"),
 }, {})
 --]]
 -- vim: ts=2 sts=2 sw=2 et
